@@ -1,0 +1,38 @@
+<h1>Bob's Burgers of the Day!</h1>
+
+<h2>Burgers of the Day that you have not tried!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers of the Day that you have devoured!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger of the Day</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="newBurger">Burger Name:</label>
+    <input type="text" id="newBurger" name="burger_name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0"> Uneaten
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
