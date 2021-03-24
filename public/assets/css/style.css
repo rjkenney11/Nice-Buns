@@ -1,0 +1,19 @@
+body{
+    background-color: #ffde5a;
+    font-family: 'Combo', cursive;
+}
+
+.logo{
+    height: 450px;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron1{
+    background-image: url("https://user-images.githubusercontent.com/74163812/112249422-1f831280-8c2e-11eb-9fbb-cf35c3a68ca5.png");
+    height: 500px;
+    width: 300px;
+}
+

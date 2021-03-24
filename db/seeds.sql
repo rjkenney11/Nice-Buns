@@ -1,5 +1,5 @@
-INSERT INTO burgers (burger_name) VALUES ('Summer Thyme Burger');
-INSERT INTO burgers (burger_name) VALUES ('Poblano Picasso Burger');
-INSERT INTO burgers (burger_name, devoured) VALUES ('Chard to a Crisp Burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Fig-eta Bout it Burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Kale Mary Burger', true);
+INSERT INTO burgers (burger_name) VALUES ('The Clapa');
+INSERT INTO burgers (burger_name) VALUES ('Cheeseburger w/ Leofri(n)c Fries');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Uhtred of Bebbanburger', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Queen Iseult & Pepper Burger', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Beocca-n & Cheeseburger', true);

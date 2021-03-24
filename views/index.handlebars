@@ -1,38 +1,60 @@
-<h1>Bob's Burgers of the Day!</h1>
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="logo">
+                <img class="logo"
+                    src="https://user-images.githubusercontent.com/74163812/112248685-b949c000-8c2c-11eb-92b8-88cf95496c11.png"
+                    alt="bebbanburger logo">
+            </div>
+        </div>
 
-<h2>Burgers of the Day that you have not tried!</h2>
+        <div class="col-2">
+            <div class="container">
+                <div class="col">
+                    <div class="jumbotron-1">
+                        <h2>Burgers that have not yet been devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+                        <ul>
+                            {{#each burgers}}
+                            {{#unless devoured}}
+                            {{> burgers/burger-block devoured=true}}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="jumbotron-2">
+                        <h2>Burgers that you have sent to Valhalla!</h2>
 
-<h2>Burgers of the Day that you have devoured!</h2>
+                        <ul>
+                            {{#each burgers}}
+                            {{#if devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+    <h2>Add a Bebbanburger</h2>
+    <form class="create-form">
 
-<h2>Add a Burger of the Day</h2>
-<form class="create-form">
+        <div class="form-group">
+            <label for="newBurger">Burger Name:</label>
+            <input type="text" id="newBurger" name="burger_name">
+        </div>
 
-  <div class="form-group">
-    <label for="newBurger">Burger Name:</label>
-    <input type="text" id="newBurger" name="burger_name">
-  </div>
+        <div class="form-group">
+            <label for="devoured">Devoured?</label><br>
+            <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+            <input type="radio" name="devoured" value="0"> Uneaten
+        </div>
 
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Uneaten
-  </div>
+        <button type="submit">Add Burger</button>
+    </form>
 
-  <button type="submit">Add Burger</button>
-</form>
+</body>
