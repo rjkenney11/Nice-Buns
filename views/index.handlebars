@@ -1,39 +1,41 @@
 <body>
-    <div class="row">
-        <div class="col">
-            <div class="logo">
-                <img class="logo"
-                    src="https://user-images.githubusercontent.com/74163812/112248685-b949c000-8c2c-11eb-92b8-88cf95496c11.png"
-                    alt="bebbanburger logo">
-            </div>
-        </div>
-
-        <div class="col-2">
-            <div class="container">
-                <div class="col">
-                    <div class="jumbotron-1">
-                        <h2>Burgers that have not yet been devoured!</h2>
-
-                        <ul>
-                            {{#each burgers}}
-                            {{#unless devoured}}
-                            {{> burgers/burger-block devoured=true}}
-                            {{/unless}}
-                            {{/each}}
-                        </ul>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="logo">
+                    <img class="logo"
+                        src="https://user-images.githubusercontent.com/74163812/112248685-b949c000-8c2c-11eb-92b8-88cf95496c11.png"
+                        alt="bebbanburger logo">
                 </div>
-                <div class="col">
-                    <div class="jumbotron-2">
-                        <h2>Burgers that you have sent to Valhalla!</h2>
+            </div>
 
-                        <ul>
-                            {{#each burgers}}
-                            {{#if devoured}}
-                            {{> burgers/burger-block devoured=false}}
-                            {{/if}}
-                            {{/each}}
-                        </ul>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron-1">
+                            <h2>Burgers that have not yet been devoured!</h2>
+
+                            <ul>
+                                {{#each burgers}}
+                                {{#unless devoured}}
+                                {{> burgers/burger-block devoured=true}}
+                                {{/unless}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron-2">
+                            <h2>Burgers that you have sent to Valhalla!</h2>
+
+                            <ul>
+                                {{#each burgers}}
+                                {{#if devoured}}
+                                {{> burgers/burger-block devoured=false}}
+                                {{/if}}
+                                {{/each}}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
