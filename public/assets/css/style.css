@@ -1,19 +1,51 @@
 body{
-    background-color: #ffde5a;
+    background-image: url("https://user-images.githubusercontent.com/74163812/112500143-81db3080-8d5e-11eb-9e1f-cee4146b90ec.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     font-family: 'Combo', cursive;
 }
 
 .logo{
     height: 450px;
     width: 450px;
-    margin-left: 20px;
+}
+
+.jumbotron-1{
+    background-color: #171b24;
+    color: white;
     margin-top: 20px;
-    margin-bottom: 20px;
+    border:5px;
+    border-color: #5eb090;
+    border-style:solid; 
+    padding: 6px;
 }
 
-.jumbotron1{
-    background-image: url("https://user-images.githubusercontent.com/74163812/112249422-1f831280-8c2e-11eb-9fbb-cf35c3a68ca5.png");
-    height: 500px;
-    width: 300px;
+.jumbotron-2{
+    background-color: #171b24;
+    color: white;
+    margin-top: 20px;
+    border:5px;
+    border-color: #5eb090;
+    border-style:solid; 
+    padding: 6px;
 }
 
+h2{
+    text-align: center;
+    color: white;
+}
+
+.create-form{
+    margin-bottom: 50px;
+    text-align: center;
+    color:white;
+}
+
+.container{
+    background-color: #ffde5a;
+    border-color: #ff5758;
+    border-style:solid; 
+    padding: 50px;
+    margin-left: 13%;
+    margin-top: 17px;
+}
