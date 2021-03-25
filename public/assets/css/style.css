@@ -6,8 +6,8 @@ body{
 }
 
 .logo{
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
 }
 
 .jumbotron-1{
@@ -48,4 +48,8 @@ h2{
     padding: 50px;
     margin-left: 13%;
     margin-top: 17px;
+}
+
+.formtitle{
+    margin-top:30px;
 }
