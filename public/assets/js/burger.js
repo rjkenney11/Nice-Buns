@@ -1,11 +1,20 @@
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-yum").on("click", function(event) {
+    
       var id = $(this).data("id");
-      var newBurger = $(this).data("newsleep");
-  
+      let choice = $('[name="devoured"]:checked').val();
+
+      if (choice === 0) {
+        var newDevoured = 1
+        
+      }else{
+        var newDevoured = 0
+      } 
+      
       var newBebbanburger = {
-        devoured: newBurger
+        devoured: newDevoured
       };
   
       // Send the PUT request.
@@ -14,7 +23,7 @@ $(function() {
         data: newBebbanburger
       }).then(
         function() {
-          console.log("changed burger to", newBurger);
+          console.log("changed burger to", newDevoured);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -24,12 +33,13 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+
       var newBurger = {
         burger_name: $("#newBurger").val().trim(),
-        devoured: $("[burger_name=devoured]:checked").val()
+        devoured: $('[name="devoured"]:checked').val()
       };
       console.log("my new burger is", newBurger)
+      console.log("is the burger eaten ", newBurger.devoured)
   
       // Send the POST request.
       $.ajax("/api/burgers", {
