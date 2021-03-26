@@ -1,9 +1,8 @@
 <li>
 	{{burger_name}}
 	<br>
-	<button class="change-yum" data-id="{{id}}" data-yum="{{devoured}}">
-		{{#if devoured}}DEVOURED!{{else}}SPARE HIM!{{/if}}
-	</button>
+		{{#if devoured}}<button class="change-yum" data-id="{{id}}" data-yum="{{devoured}}">
+	DEVOURED</button> {{/if}}
 
 	<button class="delete-yum" data-id="{{this.id}}">DELETE!</button>
 </li>

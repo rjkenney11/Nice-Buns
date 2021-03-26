@@ -6,11 +6,11 @@ $(function() {
       var id = $(this).data("id");
       let choice = $('[name="devoured"]:checked').val();
 
-      if (choice === 0) {
-        var newDevoured = 1
+      if (choice === 1) {
+        var newDevoured = 0
         
       }else{
-        var newDevoured = 0
+        var newDevoured = 1
       } 
       
       var newBebbanburger = {
