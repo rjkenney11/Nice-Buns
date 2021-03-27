@@ -1,7 +1,7 @@
 # Nice Buns
   
 ### Description: 
-created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM 
+created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM based on the Netflix show "The Last Kingdom"
 
 ### Table of Contents:
   - [Description](#description)
@@ -21,8 +21,6 @@ Rachel Kenney<br />
 <br />
 
 ### Questions:
-<br />
-<br />
 Email me: rjkenney11@gmail.com<br />
 <br />
  
