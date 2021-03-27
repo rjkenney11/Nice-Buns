@@ -19,7 +19,7 @@ GitHib Link: https://rjkenney11.github.io/Nice-Buns/ <br /><br />
 ### Contributing:
 Rachel Kenney<br />
 <br />
-GitHub: [rjkenney11](http://github.com/rjkenney11)<br /><br />
+<a href="https://intense-scrubland-85974.herokuapp.com/">Check it out here</a>
 
 ### Questions:
 <br />
