@@ -5,7 +5,6 @@ created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM
 
 ### Table of Contents:
   - [Description](#description)
-  - [Usage](#usage)
   - [Screenshot](#screenshot)
   - [Contributing](#contributing)
 
