@@ -14,12 +14,11 @@ created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM
 ![Image](https://user-images.githubusercontent.com/74163812/112504488-39257680-8d62-11eb-8ea4-dc4959b72d3a.png)
 <br />
 <br />
-GitHib Link: https://rjkenney11.github.io/Nice-Buns/ <br /><br />
+<a href="https://intense-scrubland-85974.herokuapp.com/">Check it out here</a>
 
 ### Contributing:
 Rachel Kenney<br />
 <br />
-<a href="https://intense-scrubland-85974.herokuapp.com/">Check it out here</a>
 
 ### Questions:
 <br />
