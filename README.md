@@ -1,7 +1,7 @@
 # Nice Buns
   
 ### Description: 
-Created an application to allow users to log the burgers they have eaten, or want to eat from a fictional restaurant (based on the Netflix show "The Last Kingdom").  Created with MySQL, Node, Express, Handlebars and a homemade ORM.
+An application to allow users to log the burgers they have eaten, or want to eat from a fictional restaurant (based on the Netflix show "The Last Kingdom").  Created with MySQL, Node, Express, Handlebars and a homemade ORM.
 
 ### Table of Contents:
   - [Description](#description)
